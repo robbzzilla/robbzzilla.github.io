@@ -5,4 +5,4 @@ const links = [
     }
 ]
 
-document.getElementById("list").innerHTML = links;
+document.getElementById("list").innerHTML = links[0];
