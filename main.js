@@ -9,12 +9,12 @@ const links = [
 // document.getElementById("list").innerHTML = link;
 
 var a = document.createElement('a');
-var link = document.createTextNode("This is link");
+var link = document.createTextNode("Week 01");
 
 a.appendChild(link);
 
-a.title = "This is Link";
+a.title = links[0].label;
 
-a.href = "https://www.geeksforgeeks.org";
+a.href = links[0].url;
 
 document.getElementById("list").appendChild(a);
