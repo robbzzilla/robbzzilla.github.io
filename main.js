@@ -2,20 +2,23 @@ const links = [
     {
         label: "Week 1 notes",
         url: "week01/index.html"
+    },
+    {
+        label: "Week 2 notes",
+        url: "week02/index.html"
     }
 ]
 
-// link = "<a href=" + links[0].url> + "Week 1</a>";
-// document.getElementById("list").innerHTML = link;
+for (i = 0; i < links.length; i++)
+{
+    var a = document.createElement('a');
+    var link = document.createTextNode("Week " + i);
 
-var a = document.createElement('a');
-var link = document.createTextNode("Week 01");
+    a.appendChild(link);
+    a.title = links[i].label;
 
-a.appendChild(link);
+    a.href = links[i].url;
+    console.log(links[i].url);
 
-a.title = links[0].label;
-
-a.href = links[0].url;
-console.log(links[0].url);
-
-document.getElementById("list").appendChild(a);
+    document.getElementById("list").appendChild(a);
+}
