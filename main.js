@@ -4,3 +4,5 @@ const links = [
         url: "week01/index.html"
     }
 ]
+
+document.getElementById("list").innerHTML = links;
