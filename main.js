@@ -16,5 +16,6 @@ a.appendChild(link);
 a.title = links[0].label;
 
 a.href = links[0].url;
+console.log(links[0].url);
 
 document.getElementById("list").appendChild(a);
