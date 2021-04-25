@@ -5,5 +5,5 @@ const links = [
     }
 ]
 
-link = "<a href=" + links[0].url> + "/>";
+link = "<a href=" + links[0].url> + "Week 1</a>";
 document.getElementById("list").innerHTML = link;
