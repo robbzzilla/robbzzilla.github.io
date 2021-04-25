@@ -5,4 +5,5 @@ const links = [
     }
 ]
 
-document.getElementById("list").innerHTML = links[0].url;
+link = "<a href=" + links[0].url> + "/>";
+document.getElementById("list").innerHTML = link;
