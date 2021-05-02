@@ -20,5 +20,5 @@ for (i = 0; i < links.length; i++)
     a.href = links[i].url;
     console.log(links[i].url);
 
-    document.getElementById("list").appendChild(a);
+    document.getElementById("list").appendChild(a + "<br>");
 }
