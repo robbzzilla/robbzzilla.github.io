@@ -20,7 +20,8 @@
            function func(){
                var text = document.getElementById("text").value;
                var tag = document.getElementById("tag");
-               tag = text;
+               console.log(text);
+               tag.innerHTML = text;
            }
         </script>
     </body>
