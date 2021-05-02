@@ -22,5 +22,5 @@ for (i = 0; i < links.length; i++)
     console.log(links[i].url);
 
     list.appendChild(a);
-    list.innerHTML = "<br>";
+    list.innerHTML += "<br>";
 }
