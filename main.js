@@ -13,6 +13,7 @@ for (i = 0; i < links.length; i++)
 {
     var a = document.createElement('a');
     var link = document.createTextNode("Week " + i);
+    var list = document.getElementById("list");
 
     a.appendChild(link);
     a.title = links[i].label;
@@ -20,5 +21,6 @@ for (i = 0; i < links.length; i++)
     a.href = links[i].url;
     console.log(links[i].url);
 
-    document.getElementById("list").appendChild(a + "<br>");
+    list.appendChild(a);
+    list.innerHTML = "<br>";
 }
