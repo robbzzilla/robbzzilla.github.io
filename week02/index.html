@@ -14,12 +14,14 @@
             <li>Hello World</li>
         </ul><br>
         <input type="text" placeholder="input text here" id="text"><br>
-        <button type="button">Submit</button>
+        <button type="button" onclick="func()">Submit</button>
         <div id="tag"></div>
         <script>
-           var text = document.GetElementByID("text");
-           var tag = document.GetElementByID("tag");
-           tag = text;
+           function func(){
+               var text = document.GetElementByID("text");
+               var tag = document.GetElementByID("tag");
+               tag = text;
+           }
         </script>
     </body>
 </html>
