@@ -12,7 +12,7 @@ const links = [
 for (i = 0; i < links.length; i++)
 {
     var a = document.createElement('a');
-    var link = document.createTextNode("Week " + i);
+    var link = document.createTextNode("Week " + i+1);
     var list = document.getElementById("list");
 
     a.appendChild(link);
