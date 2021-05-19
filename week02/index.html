@@ -12,6 +12,17 @@
         <h2>Week 02</h2>
         <ul>
             <li>Hello World</li>
-        </ul>
+        </ul><br>
+        <input type="text" placeholder="input text here" id="text"><br>
+        <button type="button" onclick="func()">Submit</button>
+        <div id="tag"></div>
+        <script>
+           function func(){
+               var text = document.getElementById("text").value;
+               var tag = document.getElementById("tag");
+               console.log(text);
+               tag.innerHTML = text;
+           }
+        </script>
     </body>
 </html>
